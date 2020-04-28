@@ -4,6 +4,7 @@ ReLU defense against adversarial attacks
 
 ** Work in Progress ... **
 
+Start with intro.ipynb
 
 The master branch works with **PyTorch 1.0.0 or higher.
 
