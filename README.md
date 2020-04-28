@@ -5,12 +5,10 @@ ReLU defense against adversarial attacks
 ** Work in Progress ... **
 
 
-
-**News**: Manuscript is avaiable in [Arxiv](https://arxiv.org/abs/xx.yy).
-
-
-## Introduction
 The master branch works with **PyTorch 1.0.0 or higher.
+
+
+Manuscript is avaiable in [Arxiv](https://arxiv.org/abs/xx.yy).
 
 
 ## License
