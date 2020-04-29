@@ -21,11 +21,11 @@ This project is released under the [Apache 2.0 license](LICENSE).
 If you use this code in your research, please cite this project.
 
 ```
-@article{xx,
+@article{reluDefense2020,
   title={Harnessing adversarial examples with a surprisingly simple defense},
   author={Borji, Al},
-  journal={arXiv preprint arXiv:xx.yy},
-  year={2019}
+  journal={arXiv preprint arXiv:2004.13013},
+  year={2020}
 }
 ```
 
