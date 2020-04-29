@@ -9,7 +9,7 @@ Start with intro.ipynb
 The master branch works with **PyTorch 1.0.0 or higher.
 
 
-Manuscript is avaiable in [Arxiv](https://arxiv.org/abs/xx.yy).
+Manuscript is avaiable in [Arxiv](http://arxiv.org/abs/2004.13013).
 
 
 ## License
