@@ -73,11 +73,11 @@ class NetTest(nn.Module):
 ```
 
 
-### Third, call your model as:
+### Third, create your model as:
 ```
 model = NetTest(sl).to(device)
 ```
-sl > 1.
+Choose sl > 1.
 
 
 
