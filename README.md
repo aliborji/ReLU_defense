@@ -32,7 +32,7 @@ If you use this code in your research, please cite this project.
 
 
 ---------------------
-## How to use this defense?
+### How to use this defense?
 
 # First, define the srelu function as below:
 
@@ -48,7 +48,7 @@ class SReLU(nn.Module):
         
         
         
-# Second, define your model as (\eg):
+### Second, define your model as (\eg):
 
 class NetTest(nn.Module):
     def __init__(self, slope):
@@ -70,7 +70,7 @@ class NetTest(nn.Module):
         return x 
 
 
-# Third, call your model as:
+### Third, call your model as:
 
 model = NetTest(sl).to(device)
 
