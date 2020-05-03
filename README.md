@@ -42,7 +42,7 @@ def srelu(input, slope):
     
 class SReLU(nn.Module):
     def __init__(self):
-        super().__init__() # init the base class
+        super().__init__() 
         
     def forward(self, input, slope):
         return srelu(input, slope)
