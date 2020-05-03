@@ -77,7 +77,7 @@ class NetTest(nn.Module):
 ```
 model = NetTest(sl).to(device)
 ```
-
+sl > 1.
 
 
 
