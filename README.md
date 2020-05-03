@@ -51,7 +51,7 @@ class SReLU(nn.Module):
         
         
 ### Second, define your model as (\eg):
-
+```
 class NetTest(nn.Module):
     def __init__(self, slope):
         super(NetTest, self).__init__()
@@ -70,11 +70,13 @@ class NetTest(nn.Module):
         x = F.dropout(x, training=self.training)
         x = self.fc2(x)
         return x 
+```
 
 
 ### Third, call your model as:
-
+```
 model = NetTest(sl).to(device)
+```
 
 
 
