@@ -36,6 +36,7 @@ If you use this code in your research, please cite this project.
 
 ### First, define the srelu function as below:
 
+```
 def srelu(input, slope):
     return slope * F.relu(input)
     
@@ -45,6 +46,7 @@ class SReLU(nn.Module):
         
     def forward(self, input, slope):
         return srelu(input, slope)
+```
         
         
         
