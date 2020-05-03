@@ -30,6 +30,54 @@ If you use this code in your research, please cite this project.
 ```
 
 
+
+---------------------
+## How to use this defense?
+
+# First, define the srelu function as below:
+
+def srelu(input, slope):
+    return slope * F.relu(input)
+    
+class SReLU(nn.Module):
+    def __init__(self):
+        super().__init__() # init the base class
+        
+    def forward(self, input, slope):
+        return srelu(input, slope)
+        
+        
+        
+# Second, define your model as (\eg):
+
+class NetTest(nn.Module):
+    def __init__(self, slope):
+        super(NetTest, self).__init__()
+        self.conv1 = nn.Conv2d(1, 10, kernel_size=5)
+        self.conv2 = nn.Conv2d(10, 20, kernel_size=5)
+        self.conv2_drop = nn.Dropout2d()
+        self.fc1 = nn.Linear(320, 50)
+        self.fc2 = nn.Linear(50, 10)
+        self.slope = slope
+        
+    def forward(self, x):
+        x = srelu(F.max_pool2d(self.conv1(x), 2), self.slope)
+        x = srelu(F.max_pool2d(self.conv2_drop(self.conv2(x)), 2), self.slope)    
+        x = x.view(-1, 320)
+        x = srelu(self.fc1(x), self.slope)
+        x = F.dropout(x, training=self.training)
+        x = self.fc2(x)
+        return x 
+
+
+# Third, call your model as:
+
+model = NetTest(sl).to(device)
+
+
+
+
+
 ## Contact
 
 This repo is currently maintained by Ali Borji (aliborji@gmail.com).
