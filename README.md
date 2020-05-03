@@ -32,9 +32,9 @@ If you use this code in your research, please cite this project.
 
 
 ---------------------
-### How to use this defense?
+## How to use this defense?
 
-# First, define the srelu function as below:
+### First, define the srelu function as below:
 
 def srelu(input, slope):
     return slope * F.relu(input)
