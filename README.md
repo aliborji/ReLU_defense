@@ -1,4 +1,4 @@
-# ReLU_defense
+# ReLU Defense
 ReLU defense against adversarial attacks
 
 
